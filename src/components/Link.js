@@ -13,7 +13,9 @@ class Link extends React.Component
     {
         event.preventDefault();
 
-        window.history.pushState({}, this.props.to, event.target.href);
+        document.title = this.props.children;
+
+        window.history.pushState({}, this.props.children, event.target.href);
 
         window.dispatchEvent(new PopStateEvent('refreshPage'));
     }

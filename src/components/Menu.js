@@ -6,8 +6,8 @@ class Menu extends React.Component
     render()
     {
         return (
-            <header>
-                <h1>F Silva é?:</h1>
+            <>
+                <h1><Link to="">F Silva é?</Link></h1>
 
                 <ul>
                     <li>
@@ -26,7 +26,7 @@ class Menu extends React.Component
                         <Link to="todos">Todos acima</Link>
                     </li>
                 </ul>
-            </header>
+            </>
         );
     }
 }
